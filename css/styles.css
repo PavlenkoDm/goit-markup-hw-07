@@ -36,6 +36,12 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Utilities class */
 .conteiner {
   margin-left: auto;
@@ -200,7 +206,7 @@ ul {
 /* MAIN */
 
  /* HERO SECTION */
-.hero-section {
+.hero {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -213,7 +219,7 @@ ul {
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -230,7 +236,7 @@ ul {
   color: #fff;
 }
 
-.button-main {
+.hero__button {
   display: block;
   width: 216px;
   min-height: 50px;
@@ -257,23 +263,23 @@ ul {
 
 
 /* FEATURES */
-.features-section {
-  /* background-color: var(--color-bg-primary); */
-}
-
-.features-list-flex {
+.features-list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
 
-.features-list-item {
+.features-list__item {
   width: 270px;
   /* background-color: tomato; */
 }
 
-.features-list-item-icon-bg {
+.features-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,11 +290,7 @@ ul {
   border-radius: 2px;
 }
 
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features-titles-list {
+.features-list__title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -300,12 +302,11 @@ ul {
 
 
 /* WHAT WE DO */
-.wwd-section {
-  /* background-color: var(--color-bg-primary); */
+.wwd {
   padding-top: 0;
 }
 
-.wwd-title {
+.wwd__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -316,24 +317,20 @@ ul {
   color: var(--color-titles);
 }
 
-.wwd-list-flex {
+.wwd-list {
   display: flex;
   justify-content: center;
 }
 
-.wwd-list-item {
+.wwd-list__item {
   position: relative;
 }
 
-.wwd-list-item:not(:last-child) {
+.wwd-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.wwd-list-item img {
-  display: block;
-}
-
-.wwd-list-item-description {
+.wwd-list__description {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -905,7 +902,7 @@ ul {
   display: block;
 }
 
-.form-modal-ptm-input {
+.modal-label__input {
   display: block;
   width: 448px;
   height: 40px;
@@ -923,7 +920,11 @@ ul {
   transition: border-color var(--transition-duration-cubic);
 }
 
-.form-modal-icon {
+.modal-label__input:focus {
+  border-color: var(--color-accent);
+}
+
+.modal-label__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -932,15 +933,18 @@ ul {
   transition: fill var(--transition-duration-cubic);
 }
 
-.form-modal-ptm-input:focus {
-  border-color: var(--color-accent);
-}
-
-.form-modal-ptm-input:focus + .form-modal-icon {
+.modal-label__input:focus + .modal-label__icon {
   fill: var(--color-accent)
 }
 
-.form-modal-textarea {
+
+.modal-textarea {
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.modal-textarea__input {
   display: block;
   width: 448px;
   height: 120px;
@@ -956,7 +960,7 @@ ul {
   transition: border-color var(--transition-duration-cubic);
 }
 
-.form-modal-textarea::placeholder {
+.modal-textarea__input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -964,24 +968,19 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-modal-textarea:focus {
+.modal-textarea__input:focus {
   border-color: var(--color-accent);
 }
 
-.form-modal-label-textarea {
-  display: block;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
 
-.checkbox-label-wrap {
+.checkbox__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.form-modal-label-checkbox {
+.checkbox__label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -989,7 +988,7 @@ ul {
   cursor: pointer;
 }
 
-.form-modal-custom-checkbox {
+.checkbox__custom {
   position: relative;
   display: inline-block;
   width: 16px;
@@ -999,7 +998,7 @@ ul {
   border-radius: 2px;
 }
 
-.form-modal-custom-checkbox-checked {
+.checkbox__custom--checked {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1015,25 +1014,26 @@ ul {
   transition: opacity var(--transition-duration-cubic);
 }
 
-.form-modal-checkbox-input:checked + 
-.form-modal-custom-checkbox > .form-modal-custom-checkbox-checked {
+.checkbox__input:checked + 
+.checkbox__custom > .checkbox__custom--checked {
   opacity: 1;
 }
 
-.form-modal-chackbox-title {
+.checkbox__title {
   display: inline-block;
   margin-left: 8.4px;
 
   color: var(--color-text-primary);
 }
 
-.form-modal-chackbox-link {
+.checkbox__link {
   display: inline-block;
   margin-left: 4px;
   color: var(--color-accent);
 }
 
-.form-modal-btn-submit {
+
+.submit-button {
   display: block;
   width: 200px;
   height: 50px;
@@ -1059,7 +1059,7 @@ ul {
   transition: background-color var(--transition-duration-cubic);
 }
 
-.form-modal-btn-submit:hover {
+.submit-button:hover {
   background-color: var(--color-accent-secondary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
