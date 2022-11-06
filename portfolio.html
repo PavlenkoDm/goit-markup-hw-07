@@ -69,38 +69,39 @@
     <main>
         
         <!-- Portfolio -->
-        <section class="section portfolio-section">
+        <section class="section">
 
             <div class="conteiner">
 
                 <!-- Portfolio Filter -->
-                <ul class="p-filter-list-flex list-nd">
-                    <li class="p-filter-list-item">
-                        <button class="button-filter b-f-util" type="button">Усі</button>
+                <ul class="list-nd portfolio-filter__list">
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__button portfolio-filter__button--smaller" type="button">Усі</button>
                     </li>
-                    <li class="p-filter-list-item">
-                        <button class="button-filter" type="button">Веб-сайти</button>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__button" type="button">Веб-сайти</button>
                     </li>
-                    <li class="p-filter-list-item">
-                        <button class="button-filter" type="button">Додатки</button>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__button" type="button">Додатки</button>
                     </li>
-                    <li class="p-filter-list-item">
-                        <button class="button-filter" type="button">Дизайн</button>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__button" type="button">Дизайн</button>
                     </li>
-                    <li class="p-filter-list-item">
-                        <button class="button-filter" type="button">Маркетинг</button>
+                    <li class="portfolio-filter__item">
+                        <button class="portfolio-filter__button" type="button">Маркетинг</button>
                     </li>
                 </ul>
 
 
                 <h1 class="visually-hidden">Наше портфоліо</h1>
 
-                <ul class="portfolio-list-flex list-nd">
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-one.jpg" alt="Ноутбук який показує картки працівників" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+                <ul class="list-nd portfolio__grid">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-one.jpg" alt="Ноутбук який показує картки працівників" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем 
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -108,17 +109,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Технокряк</h2>
-                                <p class="portfolio-cards-descr">Веб-сайт</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Технокряк</h2>
+                                <p class="portfolio-card__description">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-two.jpg" alt="Два баскетболісти один з яких намагається кинути м'яч" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-two.jpg" alt="Два баскетболісти один з яких намагається кинути м'яч" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -126,17 +128,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Постер New Orlean vs Golden Star</h2>
-                                <p class="portfolio-cards-descr">Дизайн</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-card__description">Дизайн</p>
                             </div>
                         </a> 
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-three.jpg" alt="Постер ресторану із зображенням риби та назви" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-three.jpg" alt="Постер ресторану із зображенням риби та назви" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -144,17 +147,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Ресторан Seafood</h2>
-                                <p class="portfolio-cards-descr">Додаток</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Ресторан Seafood</h2>
+                                <p class="portfolio-card__description">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-four.jpg" alt="Навушники" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-four.jpg" alt="Навушники" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -162,17 +166,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Проєкт Prime</h2>
-                                <p class="portfolio-cards-descr">Маркетинг</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Проєкт Prime</h2>
+                                <p class="portfolio-card__description">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-five.jpg" alt="Дві коробки одна з яких біла друга картонного кольору" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-five.jpg" alt="Дві коробки одна з яких біла друга картонного кольору" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -180,17 +185,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Проєкт Boxes</h2>
-                                <p class="portfolio-cards-descr">Додаток</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Проєкт Boxes</h2>
+                                <p class="portfolio-card__description">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-six.jpg" alt="Монітор який показує сайт" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-six.jpg" alt="Монітор який показує сайт" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -198,17 +204,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Inspiration has no Borders</h2>
-                                <p class="portfolio-cards-descr">Веб-сайт</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Inspiration has no Borders</h2>
+                                <p class="portfolio-card__description">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-seven.jpg" alt="Розгорнутий журнал для жінок" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-seven.jpg" alt="Розгорнутий журнал для жінок" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -216,17 +223,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Видання Limited Edition</h2>
-                                <p class="portfolio-cards-descr">Дизайн</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Видання Limited Edition</h2>
+                                <p class="portfolio-card__description">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-eight.jpg" alt="Біла лейба з назвою поєкту" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-eight.jpg" alt="Біла лейба з назвою поєкту" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -234,17 +242,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Проєкт LAB</h2>
-                                <p class="portfolio-cards-descr">Маркетинг</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Проєкт LAB</h2>
+                                <p class="portfolio-card__description">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio-list-item">
-                        <a class="link-nd portfolio-shadow" href="#">
-                            <div class="portfolio-list-item-img-wrap">
-                                <img class="portfolio-list-item-img" src="./images/project-nine.jpg" alt="Ноутбук за яким працює людина" width="370" height="294">
-                                <div class="p-l-i-img-descr">
+
+                    <li>
+                        <a class="link-nd portfolio-card__link" href="#">
+                            <div class="portfolio-card__imgwrapper">
+                                <img src="./images/project-nine.jpg" alt="Ноутбук за яким працює людина" width="370" height="294">
+                                <div class="portfolio-card__overlay">
                                     <p>
                                         Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -252,12 +261,13 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="portfolio-list-item-titdes">
-                                <h2 class="portfolio-titles-list">Growing Business</h2>
-                                <p class="portfolio-cards-descr">Додаток</p>
+                            <div class="portfolio-card__meta">
+                                <h2 class="portfolio-card__title">Growing Business</h2>
+                                <p class="portfolio-card__description">Додаток</p>
                             </div>
                         </a>
                     </li>
+
                 </ul>
 
             </div>
