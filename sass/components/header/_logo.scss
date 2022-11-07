@@ -6,12 +6,12 @@
     line-height: 1.2;
 
     text-decoration: none;
+
+    &__accent {
+            color: var(--color-accent);
+        }
 }
 
 .header-logo {
     color: #000;
-}
-
-.logo__accent {
-    color: var(--color-accent);
 }

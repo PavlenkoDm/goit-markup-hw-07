@@ -39,16 +39,16 @@
     outline: none;
     cursor: pointer;
     transition: border-color var(--transition-duration-cubic);
-}
 
-.form-subscribe__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-}
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
 
-.form-subscribe__input:focus {
-    border-color: var(--color-accent);
+    &:focus {
+        border-color: var(--color-accent);
+    }
 }
 
 .button-subscribe {
@@ -68,23 +68,23 @@
     cursor: pointer;
 
     transition: background-color var(--transition-duration-cubic);
-}
 
-.button-subscribe:hover {
-    background-color: var(--color-accent-secondary);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+    &:hover {
+        background-color: var(--color-accent-secondary);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 
-.button-subscribe__title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+    
+        color: #fff;
+    }
 
-    color: #fff;
-}
-
-.button-subscribe__icon {
-    margin-left: 10px;
-    fill: #fff;
+    &__icon {
+        margin-left: 10px;
+        fill: #fff;
+    }
 }

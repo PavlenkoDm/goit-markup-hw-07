@@ -26,10 +26,10 @@
     fill: var(--color-sl-primary);
 
     transition: fill var(--transition-duration-cubic), border-color var(--transition-duration-cubic);
-}
 
-.regular-customers__link:hover,
-.regular-customers__link:focus {
-    border-color: var(--color-accent);
-    fill: var(--color-accent);
+    &:hover,
+    &:focus {
+        border-color: var(--color-accent);
+        fill: var(--color-accent);
+    }
 }

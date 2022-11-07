@@ -818,9 +818,20 @@ img {
   pointer-events: none;
 }
 
-.is-hidden .modal {
-  transform: scale(0.5);
-  transform: translate(-50%, -50%);
+.close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  background-color: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 .modal {
@@ -840,20 +851,9 @@ img {
   transition: transform var(--transition-duration-cubic);
 }
 
-.close-button {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-
-  background-color: #fff;
-  
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+.is-hidden .modal {
+  transform: scale(0.5);
+  transform: translate(-50%, -50%);
 }
 
 .form-modal__title {

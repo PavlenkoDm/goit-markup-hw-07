@@ -1,19 +1,22 @@
 .team {
     background-color: var(--color-bg-secondary);
+
+    &__title {
+        margin-bottom: 50px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+    
+        color: var(--color-titles);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.team__title {
-    margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
 
-    color: var(--color-titles);
-}
-
-.team__list {
-    display: flex;
-    justify-content: center;
-}
