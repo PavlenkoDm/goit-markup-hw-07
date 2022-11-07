@@ -6,11 +6,9 @@
 }
 
 .header-conteiner {
-    display: flex;
-    align-items: center;
+    @extend %flex-a;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
+    @extend %flex-a;
 }

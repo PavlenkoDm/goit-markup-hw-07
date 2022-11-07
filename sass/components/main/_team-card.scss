@@ -34,17 +34,13 @@
     }
 
     &__soclist {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-j-a;
         gap: 10px;
     }
 }
 
 .team-card__soclink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-j-a;
     width: 44px;
     height: 44px;
     /* border: 1px solid #000; */

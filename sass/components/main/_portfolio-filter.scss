@@ -1,6 +1,5 @@
 .portfolio-filter__list {
-    display: flex;
-    justify-content: center;
+    @extend %flex-j;
     margin-bottom: 50px;
 }
 

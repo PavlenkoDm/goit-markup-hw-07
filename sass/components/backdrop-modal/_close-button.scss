@@ -1,8 +1,6 @@
 .close-button {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-j-a;
     top: 8px;
     right: 8px;
     width: 30px;

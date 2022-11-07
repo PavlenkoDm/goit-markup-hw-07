@@ -16,9 +16,7 @@
 }
 
 .form-subscribe__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-j-a;
 }
 
 .form-subscribe__input {
@@ -52,9 +50,7 @@
 }
 
 .button-subscribe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-j-a;
 
     width: 200px;
     height: 50px;

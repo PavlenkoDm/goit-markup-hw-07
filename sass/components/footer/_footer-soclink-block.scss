@@ -20,9 +20,7 @@
 }
 
 .footer-soclink-block__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-j-a;
     width: 44px;
     height: 44px;
     /* border: 1px solid #000; */

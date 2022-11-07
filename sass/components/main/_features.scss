@@ -1,8 +1,7 @@
 .features-list {
-    display: flex;
+    @extend %flex-j;
     margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+    margin-right: auto;    
 
     &__item {
         width: 270px;
@@ -13,9 +12,7 @@
     }
     
     &__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-j-a;
         width: 270px;
         height: 120px;
         background-color: var(--color-bg-secondary);
